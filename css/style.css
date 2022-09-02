@@ -180,10 +180,7 @@ button:focus {
     z-index: 9;
 }
 
-
 /********* toggle css end *********/
-
-
 .headerCol {
     padding: 40px 0;
     background-color: var(--bodyBg);
