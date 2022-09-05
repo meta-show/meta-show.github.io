@@ -1951,10 +1951,7 @@ ul.listStyle>li+li {
 
 @media (min-width:992px) {
 
-    .tokenSwiper .swiper-pagination {
-        /* display: none; */
-        ;
-    }
+    .tokenSwiper .swiper-pagination {}
 }
 
 @media (min-width:1400px) {
