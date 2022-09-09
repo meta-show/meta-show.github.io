@@ -39,6 +39,10 @@ ul {
     list-style-type: none;
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -344,7 +348,7 @@ button:focus {
 .visionContentMain {
     text-align: center;
     padding: 65px 40px;
-    background-image: url('../images/vision-bg.jpg');
+    background-image: url('../img/vision-bg.jpg');
     border-radius: 50px;
     -webkit-background-size: cover;
     background-size: cover;
@@ -963,7 +967,7 @@ ul.listStyle>li::before {
     top: 2px;
     width: 14px;
     height: 20px;
-    background-image: url('../images/list-icon.svg');
+    background-image: url('../img/list-icon.svg');
     background-position: left center;
     background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -1001,7 +1005,7 @@ ul.listStyle>li+li {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1fffc', endColorstr='#e5f6ff', GradientType=1);
 }
 
-.tokenCard>h4 {
+.tokenCard>h2 {
     color: var(--secondaryColor);
     text-align: center;
     padding-bottom: 20px;
@@ -1109,7 +1113,7 @@ ul.listStyle>li+li {
     right: 0;
     bottom: calc(100% - 1px);
     height: 18px;
-    background-image: url('../images/roadmap-top-shape-1.svg');
+    background-image: url('../img/roadmap-top-shape-1.svg');
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
@@ -1117,15 +1121,15 @@ ul.listStyle>li+li {
 }
 
 .roadmapSwiper .swiper-slide:nth-child(2) .roadmapBtmCol::before {
-    background-image: url('../images/roadmap-top-shape-2.svg');
+    background-image: url('../img/roadmap-top-shape-2.svg');
 }
 
 .roadmapSwiper .swiper-slide:nth-child(3) .roadmapBtmCol::before {
-    background-image: url('../images/roadmap-top-shape-3.svg');
+    background-image: url('../img/roadmap-top-shape-3.svg');
 }
 
 .roadmapSwiper .swiper-slide:nth-child(4) .roadmapBtmCol::before {
-    background-image: url('../images/roadmap-top-shape-4.svg');
+    background-image: url('../img/roadmap-top-shape-4.svg');
 }
 
 .rmTitleCol span {
@@ -1163,7 +1167,7 @@ ul.listStyle>li+li {
     left: calc(50% + 25px);
     width: 245px;
     height: 20px;
-    background-image: url('../images/roadmap-line.svg');
+    background-image: url('../img/roadmap-line.svg');
     background-size: contain;
     background-repeat: no-repeat;
     top: 50px;
@@ -1230,14 +1234,14 @@ ul.listStyle>li+li {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url('../images/minus-icon.svg');
+    background-image: url('../img/minus-icon.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .accordionStyle .accordion-button.collapsed::after {
     background-color: #F1F1FF;
-    background-image: url('../images/plus-icon.svg');
+    background-image: url('../img/plus-icon.svg');
 }
 
 .sectionSpace.teamSection {
@@ -1258,7 +1262,7 @@ ul.listStyle>li+li {
     right: -80px;
 }
 
-.teamContentTopCol>h4 {
+.teamContentTopCol>h2 {
     font-size: 30px;
     font-weight: var(--fwBold);
     margin-bottom: 5px;
@@ -1799,7 +1803,7 @@ ul.listStyle>li+li {
     right: 20px;
     top: 20px;
     bottom: 0px;
-    background-image: url('../images/video-blur.jpg');
+    background-image: url('../img/video-blur.jpg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -1927,7 +1931,7 @@ ul.listStyle>li+li {
     padding-bottom: 20px;
 }
 
-.avilLogoCol>h4 {
+.avilLogoCol>h2 {
     color: #A89BBC;
     font-size: 14px;
     font-weight: var(--fwSBold);
@@ -1948,11 +1952,6 @@ ul.listStyle>li+li {
 }
 
 /* media start */
-
-@media (min-width:992px) {
-
-    .tokenSwiper .swiper-pagination {}
-}
 
 @media (min-width:1400px) {
 

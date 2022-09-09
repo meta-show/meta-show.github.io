@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>MetaShow</title>
         <script type="text/javascript">
-            if (window.location.host.length && "meta-show.co" !== window.location.host) {
+            if (window.location.host.length && -1 === ["meta-show.co", "localhost"].indexOf(window.location.host)) {
                 window.location.href = "https://meta-show.co";
             }
         </script>
-        <meta charset="utf-8" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="canonical" href="https://meta-show.co" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Meta Show</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-            rel="stylesheet" />
+        <link rel="manifest" id="pwa_manifest" />
+        <link rel="apple-touch-icon" href="./img/logo/512.png" />
 
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Live Events 3.0 - A digital world and an online experience platform" />
+
+        <meta name="theme-color" content="#0d0519" />
+        <meta name="msapplication-TileColor" content="#0d0519" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta property="og:title" content="MetaShow" />
+        <meta property="og:url" content="https://meta-show.co/" />
+        <meta property="og:site_name" content="MetaShow" />
+        <meta property="og:description" content="Live Events 3.0 - A digital world and an online experience platform" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://meta-show.co/img/ecosystem-img.png" />
+
+        <link href="./css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <header>
@@ -26,7 +42,7 @@
                         <div class="col col-lg-auto">
                             <div class="logoCol">
                                 <a href="https://meta-show.co">
-                                    <img src="images/logo.svg" alt="MetaShow" />
+                                    <img src="img/logo.svg" alt="MetaShow" />
                                 </a>
                             </div>
                         </div>
@@ -37,63 +53,23 @@
                                         <div class="menuCol">
                                             <ul>
                                                 <li>
-                                                    <span
-                                                        class="data-scroll"
-                                                        data-scroll-to="#howItWorkId"
-                                                        ><a
-                                                            href="javascript:void(0)"
-                                                            class="nav-link"
-                                                            >How it works</a
-                                                        ></span
-                                                    >
+                                                    <span class="data-scroll" data-scroll-to="#howItWorkId"><span class="nav-link">How it works</span></span>
                                                 </li>
 
                                                 <li>
-                                                    <span
-                                                        class="data-scroll"
-                                                        data-scroll-to="#tokenId"
-                                                        ><a
-                                                            href="javascript:void(0)"
-                                                            class="nav-link"
-                                                            >Tokens</a
-                                                        ></span
-                                                    >
+                                                    <span class="data-scroll" data-scroll-to="#tokenId"><span class="nav-link">Tokens</span></span>
                                                 </li>
 
                                                 <li>
-                                                    <span
-                                                        class="data-scroll"
-                                                        data-scroll-to="#roadmapId"
-                                                        ><a
-                                                            href="javascript:void(0)"
-                                                            class="nav-link"
-                                                            >Roadmap</a
-                                                        ></span
-                                                    >
+                                                    <span class="data-scroll" data-scroll-to="#roadmapId"><span class="nav-link">Roadmap</span></span>
                                                 </li>
 
                                                 <li>
-                                                    <span
-                                                        class="data-scroll"
-                                                        data-scroll-to="#teamId"
-                                                        ><a
-                                                            href="javascript:void(0)"
-                                                            class="nav-link"
-                                                            >Team</a
-                                                        ></span
-                                                    >
+                                                    <span class="data-scroll" data-scroll-to="#teamId"><span class="nav-link">Team</span></span>
                                                 </li>
 
                                                 <li>
-                                                    <span
-                                                        class="data-scroll"
-                                                        data-scroll-to="#contactId"
-                                                        ><a
-                                                            href="javascript:void(0)"
-                                                            class="nav-link"
-                                                            >Contact us</a
-                                                        ></span
-                                                    >
+                                                    <span class="data-scroll" data-scroll-to="#contactId"><span class="nav-link">Contact us</span></span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -103,47 +79,21 @@
                                         <div class="socialIcons">
                                             <ul>
                                                 <li>
-                                                    <a
-                                                        rel="nofollow"
-                                                        target="_blank"
-                                                        href="https://www.linkedin.com/company/meta-show"
-                                                        ><img
-                                                            src="images/linkedin.svg"
-                                                            alt="LinkedIn"
+                                                    <a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/meta-show"
+                                                        ><img src="img/linkedin.svg" alt="LinkedIn"
                                                     /></a>
                                                 </li>
 
                                                 <li>
-                                                    <a
-                                                        rel="nofollow"
-                                                        target="_blank"
-                                                        href="https://t.me/metashowofficial"
-                                                        ><img
-                                                            src="images/telegram.svg"
-                                                            alt="Telegram"
-                                                    /></a>
+                                                    <a rel="nofollow" target="_blank" href="https://t.me/metashowofficial"><img src="img/telegram.svg" alt="Telegram" /></a>
                                                 </li>
 
                                                 <li>
-                                                    <a
-                                                        rel="nofollow"
-                                                        target="_blank"
-                                                        href="https://discord.gg/A9yg56Hc6v"
-                                                        ><img
-                                                            src="images/discord.svg"
-                                                            alt="Discord"
-                                                    /></a>
+                                                    <a rel="nofollow" target="_blank" href="https://discord.gg/A9yg56Hc6v"><img src="img/discord.svg" alt="Discord" /></a>
                                                 </li>
 
                                                 <li>
-                                                    <a
-                                                        rel="nofollow"
-                                                        target="_blank"
-                                                        href="https://twitter.com/HelloMetashow"
-                                                        ><img
-                                                            src="images/twitter.svg"
-                                                            alt="Twitter"
-                                                    /></a>
+                                                    <a rel="nofollow" target="_blank" href="https://twitter.com/HelloMetashow"><img src="img/twitter.svg" alt="Twitter" /></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -153,11 +103,11 @@
 
                             <div class="d-lg-none">
                                 <div class="menuTogle">
-                                    <a href="javascript:void(0)" class="toggle">
+                                    <span class="toggle">
                                         <span class="bar"></span>
                                         <span class="bar"></span>
                                         <span class="bar"></span>
-                                    </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -172,61 +122,19 @@
                         <div class="row align-items-center">
                             <div class="col-md-6 order-md-last">
                                 <div class="bannerImgCol">
-                                    <span class="bannerShape1"
-                                        ><img
-                                            data-offset="90"
-                                            src="images/banner-shape-1.svg"
-                                            alt="..."
-                                            class="parallax"
-                                    /></span>
+                                    <span class="bannerShape1"><img data-offset="90" src="img/banner-shape-1.svg" alt="..." class="parallax" /></span>
 
-                                    <span class="bannerShape2"
-                                        ><img
-                                            data-offset="30"
-                                            src="images/banner-shape-2.svg"
-                                            alt="..."
-                                            class="parallax"
-                                    /></span>
+                                    <span class="bannerShape2"><img data-offset="30" src="img/banner-shape-2.svg" alt="..." class="parallax" /></span>
 
-                                    <span class="bannerBg"
-                                        ><img
-                                            data-offset="10"
-                                            src="images/banner-bg.png"
-                                            alt="..."
-                                            class="parallax"
-                                    /></span>
+                                    <span class="bannerBg"><img data-offset="10" src="img/banner-bg.png" alt="..." class="parallax" /></span>
 
-                                    <span class="bannerImg"
-                                        ><img
-                                            data-offset="30"
-                                            src="images/Man photo.png"
-                                            alt="..."
-                                            class="parallax"
-                                    /></span>
+                                    <span class="bannerImg"><img data-offset="30" src="img/Man photo.png" alt="..." class="parallax" /></span>
 
-                                    <span class="bannerBox1"
-                                        ><img
-                                            data-offset="20"
-                                            src="images/banner-box-1.svg"
-                                            alt="..."
-                                            class="parallax"
-                                    /></span>
+                                    <span class="bannerBox1"><img data-offset="20" src="img/banner-box-1.svg" alt="..." class="parallax" /></span>
 
-                                    <span class="bannerBox2"
-                                        ><img
-                                            data-offset="30"
-                                            src="images/banner-box-2.svg"
-                                            alt="..."
-                                            class="parallax"
-                                    /></span>
+                                    <span class="bannerBox2"><img data-offset="30" src="img/banner-box-2.svg" alt="..." class="parallax" /></span>
 
-                                    <span class="bannerBox3"
-                                        ><img
-                                            data-offset="50"
-                                            src="images/banner-box-3.svg"
-                                            alt="..."
-                                            class="parallax"
-                                    /></span>
+                                    <span class="bannerBox3"><img data-offset="50" src="img/banner-box-3.svg" alt="..." class="parallax" /></span>
                                 </div>
                             </div>
 
@@ -236,9 +144,7 @@
 
                                     <div class="row g-2 g-sm-4 align-items-center">
                                         <div class="col">
-                                            <p class="bannerP">
-                                                A digital world and an online experience platform
-                                            </p>
+                                            <p class="bannerP">A digital world and an online experience platform</p>
                                         </div>
 
                                         <div class="col-auto">
@@ -265,10 +171,10 @@
                                             <li>Powered By</li>
 
                                             <li>
-                                                <img src="images/cardano-logo.svg" alt="Cardano" />
+                                                <img src="img/cardano-logo.svg" alt="Cardano" />
                                             </li>
                                             <li>
-                                                <img src="images/ue-logo.svg" alt="Unreal Engine" />
+                                                <img src="img/ue-logo.svg" alt="Unreal Engine" />
                                             </li>
                                         </ul>
                                     </div>
@@ -285,8 +191,8 @@
                 <div class="container">
                     <div class="videoCol">
                         <div class="ratio ratio-16x9">
-                            <video class="video" poster="images/video-poster.jpg">
-                                <source src="images/video.mp4" type="video/mp4" />
+                            <video class="video" poster="img/video-poster.jpg">
+                                <source src="img/video.mp4" type="video/mp4" />
 
                                 Your browser does not support the video tag.
                             </video>
@@ -294,7 +200,7 @@
 
                         <div class="playpause">
                             <span>play</span>
-                            <span><img src="images/play-icon.svg" alt="Play" /></span>
+                            <span><img src="img/play-icon.svg" alt="Play" /></span>
                         </div>
                     </div>
                 </div>
@@ -310,9 +216,7 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <span class="marqueeImgCol"
-                                ><img src="images/marquee-img-1.png" alt="..." class="mqImg1"
-                            /></span>
+                            <span class="marqueeImgCol"><img src="img/marquee-img-1.png" alt="..." class="mqImg1" /></span>
                         </div>
                     </div>
 
@@ -324,15 +228,11 @@
                 <div class="swiper marqueeSlider2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <span class="marqueeText"
-                                >Real audience and artist’s live performances</span
-                            >
+                            <span class="marqueeText">Real audience and artist’s live performances</span>
                         </div>
 
                         <div class="swiper-slide">
-                            <span class="marqueeImgCol"
-                                ><img src="images/marquee-img-2.svg" alt="..." class="mqImg2"
-                            /></span>
+                            <span class="marqueeImgCol"><img src="img/marquee-img-2.svg" alt="..." class="mqImg2" /></span>
                         </div>
                     </div>
 
@@ -344,9 +244,7 @@
                 <div class="swiper marqueeSlider1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <span class="marqueeImgCol"
-                                ><img src="images/marquee-img-3.png" alt="..." class="mqImg3"
-                            /></span>
+                            <span class="marqueeImgCol"><img src="img/marquee-img-3.png" alt="..." class="mqImg3" /></span>
                         </div>
 
                         <div class="swiper-slide">
@@ -362,9 +260,7 @@
                 <div class="swiper marqueeSlider2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <span class="marqueeImgCol"
-                                ><img src="images/marquee-img-4.svg" alt="..." class="mqImg4"
-                            /></span>
+                            <span class="marqueeImgCol"><img src="img/marquee-img-4.svg" alt="..." class="mqImg4" /></span>
                         </div>
 
                         <div class="swiper-slide">
@@ -390,35 +286,18 @@
                                                 <ul>
                                                     <li class="acListOption1">
                                                         <div class="accodionTrigger active">
-                                                            <img
-                                                                src="images/ac-title-icon-1.svg"
-                                                                alt="..."
-                                                                class="atTriggerImg" />
+                                                            <img src="img/ac-title-icon-1.svg" alt="..." class="atTriggerImg" />
 
-                                                            <span class="atTitleText"
-                                                                >Chat, dance, and have fun!</span
-                                                            >
+                                                            <span class="atTitleText">Chat, dance, and have fun!</span>
                                                         </div>
 
-                                                        <div
-                                                            class="accordionContent"
-                                                            style="display: block">
+                                                        <div class="accordionContent" style="display: block">
                                                             <ul class="listStyle2">
-                                                                <li>
-                                                                    Attend immersive and interactive
-                                                                    live events
-                                                                </li>
+                                                                <li>Attend immersive and interactive live events</li>
 
-                                                                <li>
-                                                                    Take part in the audience from
-                                                                    wherever you are
-                                                                </li>
+                                                                <li>Take part in the audience from wherever you are</li>
 
-                                                                <li>
-                                                                    Experience the emotion and
-                                                                    energy of artists and events you
-                                                                    love
-                                                                </li>
+                                                                <li>Experience the emotion and energy of artists and events you love</li>
 
                                                                 <li>Meet fans and artists</li>
                                                             </ul>
@@ -427,64 +306,36 @@
 
                                                     <li class="acListOption2">
                                                         <div class="accodionTrigger">
-                                                            <img
-                                                                src="images/ac-title-icon-2.svg"
-                                                                alt="..."
-                                                                class="atTriggerImg" />
+                                                            <img src="img/ac-title-icon-2.svg" alt="..." class="atTriggerImg" />
 
-                                                            <span class="atTitleText"
-                                                                >Boost your spending power!</span
-                                                            >
+                                                            <span class="atTitleText">Boost your spending power!</span>
                                                         </div>
 
                                                         <div class="accordionContent">
                                                             <ul class="listStyle2">
-                                                                <li>
-                                                                    Purchase Event tickets and get
-                                                                    access to the real and virtual
-                                                                    events or sale in the secondary
-                                                                    market
-                                                                </li>
+                                                                <li>Purchase Event tickets and get access to the real and virtual events or sale in the secondary market</li>
 
                                                                 <li>Get exclusive VIP access</li>
 
-                                                                <li>
-                                                                    Shop for digital and physical
-                                                                    merch and other collectibles
-                                                                </li>
+                                                                <li>Shop for digital and physical merch and other collectibles</li>
                                                             </ul>
                                                         </div>
                                                     </li>
 
                                                     <li class="acListOption3">
                                                         <div class="accodionTrigger">
-                                                            <img
-                                                                src="images/ac-title-icon-3.svg"
-                                                                alt="..."
-                                                                class="atTriggerImg" />
+                                                            <img src="img/ac-title-icon-3.svg" alt="..." class="atTriggerImg" />
 
-                                                            <span class="atTitleText"
-                                                                >Get involved behind the
-                                                                scenes!</span
-                                                            >
+                                                            <span class="atTitleText">Get involved behind the scenes!</span>
                                                         </div>
 
                                                         <div class="accordionContent">
                                                             <ul class="listStyle2">
-                                                                <li>
-                                                                    Event’s crowdfunding with an
-                                                                    Innovative staking model
-                                                                </li>
+                                                                <li>Event’s crowdfunding with an Innovative staking model</li>
 
-                                                                <li>
-                                                                    Own a share of the event’s venue
-                                                                    and earn profit
-                                                                </li>
+                                                                <li>Own a share of the event’s venue and earn profit</li>
 
-                                                                <li>
-                                                                    Earn profit through NFTs that
-                                                                    reward you and benefit artists
-                                                                </li>
+                                                                <li>Earn profit through NFTs that reward you and benefit artists</li>
                                                             </ul>
                                                         </div>
                                                     </li>
@@ -496,61 +347,19 @@
                                     <div class="col-md-auto">
                                         <div class="aSliderImgCol d-none d-lg-block">
                                             <div class="bannerImgCol">
-                                                <span class="bannerShape1"
-                                                    ><img
-                                                        data-offset="90"
-                                                        src="images/banner-shape-1.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerShape1"><img data-offset="90" src="img/banner-shape-1.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerShape2"
-                                                    ><img
-                                                        data-offset="30"
-                                                        src="images/banner-shape-2.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerShape2"><img data-offset="30" src="img/banner-shape-2.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBg"
-                                                    ><img
-                                                        data-offset="10"
-                                                        src="images/banner-bg.png"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBg"><img data-offset="10" src="img/banner-bg.png" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerImg"
-                                                    ><img
-                                                        data-offset="30"
-                                                        src="images/accordion-img-1.png"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerImg"><img data-offset="30" src="img/accordion-img-1.png" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBox1"
-                                                    ><img
-                                                        data-offset="20"
-                                                        src="images/banner-box-1.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBox1"><img data-offset="20" src="img/banner-box-1.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBox2"
-                                                    ><img
-                                                        data-offset="30"
-                                                        src="images/banner-box-2.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBox2"><img data-offset="30" src="img/banner-box-2.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBox3"
-                                                    ><img
-                                                        data-offset="50"
-                                                        src="images/banner-box-3.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBox3"><img data-offset="50" src="img/banner-box-3.svg" alt="..." class="parallax-x" /></span>
                                             </div>
                                         </div>
                                     </div>
@@ -567,33 +376,18 @@
                                                 <ul>
                                                     <li class="acListOption1">
                                                         <div class="accodionTrigger">
-                                                            <img
-                                                                src="images/ac-title-icon-1.svg"
-                                                                alt="..."
-                                                                class="atTriggerImg" />
+                                                            <img src="img/ac-title-icon-1.svg" alt="..." class="atTriggerImg" />
 
-                                                            <span class="atTitleText"
-                                                                >Chat, dance, and have fun!</span
-                                                            >
+                                                            <span class="atTitleText">Chat, dance, and have fun!</span>
                                                         </div>
 
                                                         <div class="accordionContent">
                                                             <ul class="listStyle2">
-                                                                <li>
-                                                                    Attend immersive and interactive
-                                                                    live events
-                                                                </li>
+                                                                <li>Attend immersive and interactive live events</li>
 
-                                                                <li>
-                                                                    Take part in the audience from
-                                                                    wherever you are
-                                                                </li>
+                                                                <li>Take part in the audience from wherever you are</li>
 
-                                                                <li>
-                                                                    Experience the emotion and
-                                                                    energy of artists and events you
-                                                                    love
-                                                                </li>
+                                                                <li>Experience the emotion and energy of artists and events you love</li>
 
                                                                 <li>Meet fans and artists</li>
                                                             </ul>
@@ -602,66 +396,36 @@
 
                                                     <li class="acListOption2">
                                                         <div class="accodionTrigger active">
-                                                            <img
-                                                                src="images/ac-title-icon-2.svg"
-                                                                alt="..."
-                                                                class="atTriggerImg" />
+                                                            <img src="img/ac-title-icon-2.svg" alt="..." class="atTriggerImg" />
 
-                                                            <span class="atTitleText"
-                                                                >Boost your spending power!</span
-                                                            >
+                                                            <span class="atTitleText">Boost your spending power!</span>
                                                         </div>
 
-                                                        <div
-                                                            class="accordionContent"
-                                                            style="display: block">
+                                                        <div class="accordionContent" style="display: block">
                                                             <ul class="listStyle2">
-                                                                <li>
-                                                                    Purchase Event tickets and get
-                                                                    access to the real and virtual
-                                                                    events or sale in the secondary
-                                                                    market
-                                                                </li>
+                                                                <li>Purchase Event tickets and get access to the real and virtual events or sale in the secondary market</li>
 
                                                                 <li>Get exclusive VIP access</li>
 
-                                                                <li>
-                                                                    Shop for digital and physical
-                                                                    merch and other collectibles
-                                                                </li>
+                                                                <li>Shop for digital and physical merch and other collectibles</li>
                                                             </ul>
                                                         </div>
                                                     </li>
 
                                                     <li class="acListOption3">
                                                         <div class="accodionTrigger">
-                                                            <img
-                                                                src="images/ac-title-icon-3.svg"
-                                                                alt="..."
-                                                                class="atTriggerImg" />
+                                                            <img src="img/ac-title-icon-3.svg" alt="..." class="atTriggerImg" />
 
-                                                            <span class="atTitleText"
-                                                                >Get involved behind the
-                                                                scenes!</span
-                                                            >
+                                                            <span class="atTitleText">Get involved behind the scenes!</span>
                                                         </div>
 
                                                         <div class="accordionContent">
                                                             <ul class="listStyle2">
-                                                                <li>
-                                                                    Event’s crowdfunding with an
-                                                                    Innovative staking model
-                                                                </li>
+                                                                <li>Event’s crowdfunding with an Innovative staking model</li>
 
-                                                                <li>
-                                                                    Own a share of the event’s venue
-                                                                    and earn profit
-                                                                </li>
+                                                                <li>Own a share of the event’s venue and earn profit</li>
 
-                                                                <li>
-                                                                    Earn profit through NFTs that
-                                                                    reward you and benefit artists
-                                                                </li>
+                                                                <li>Earn profit through NFTs that reward you and benefit artists</li>
                                                             </ul>
                                                         </div>
                                                     </li>
@@ -673,61 +437,19 @@
                                     <div class="col-md-auto">
                                         <div class="aSliderImgCol d-none d-lg-block">
                                             <div class="bannerImgCol">
-                                                <span class="bannerShape1"
-                                                    ><img
-                                                        data-offset="90"
-                                                        src="images/banner-shape-1.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerShape1"><img data-offset="90" src="img/banner-shape-1.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerShape2"
-                                                    ><img
-                                                        data-offset="30"
-                                                        src="images/banner-shape-2.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerShape2"><img data-offset="30" src="img/banner-shape-2.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBg"
-                                                    ><img
-                                                        data-offset="10"
-                                                        src="images/banner-bg.png"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBg"><img data-offset="10" src="img/banner-bg.png" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerImg"
-                                                    ><img
-                                                        data-offset="30"
-                                                        src="images/accordion-img-2.png"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerImg"><img data-offset="30" src="img/accordion-img-2.png" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBox1"
-                                                    ><img
-                                                        data-offset="20"
-                                                        src="images/banner-box-1.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBox1"><img data-offset="20" src="img/banner-box-1.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBox2"
-                                                    ><img
-                                                        data-offset="30"
-                                                        src="images/banner-box-2.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBox2"><img data-offset="30" src="img/banner-box-2.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBox3"
-                                                    ><img
-                                                        data-offset="50"
-                                                        src="images/banner-box-3.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBox3"><img data-offset="50" src="img/banner-box-3.svg" alt="..." class="parallax-x" /></span>
                                             </div>
                                         </div>
                                     </div>
@@ -744,33 +466,18 @@
                                                 <ul>
                                                     <li class="acListOption1">
                                                         <div class="accodionTrigger">
-                                                            <img
-                                                                src="images/ac-title-icon-1.svg"
-                                                                alt="..."
-                                                                class="atTriggerImg" />
+                                                            <img src="img/ac-title-icon-1.svg" alt="..." class="atTriggerImg" />
 
-                                                            <span class="atTitleText"
-                                                                >Chat, dance, and have fun!</span
-                                                            >
+                                                            <span class="atTitleText">Chat, dance, and have fun!</span>
                                                         </div>
 
                                                         <div class="accordionContent">
                                                             <ul class="listStyle2">
-                                                                <li>
-                                                                    Attend immersive and interactive
-                                                                    live events
-                                                                </li>
+                                                                <li>Attend immersive and interactive live events</li>
 
-                                                                <li>
-                                                                    Take part in the audience from
-                                                                    wherever you are
-                                                                </li>
+                                                                <li>Take part in the audience from wherever you are</li>
 
-                                                                <li>
-                                                                    Experience the emotion and
-                                                                    energy of artists and events you
-                                                                    love
-                                                                </li>
+                                                                <li>Experience the emotion and energy of artists and events you love</li>
 
                                                                 <li>Meet fans and artists</li>
                                                             </ul>
@@ -779,66 +486,36 @@
 
                                                     <li class="acListOption2">
                                                         <div class="accodionTrigger">
-                                                            <img
-                                                                src="images/ac-title-icon-2.svg"
-                                                                alt="..."
-                                                                class="atTriggerImg" />
+                                                            <img src="img/ac-title-icon-2.svg" alt="..." class="atTriggerImg" />
 
-                                                            <span class="atTitleText"
-                                                                >Boost your spending power!</span
-                                                            >
+                                                            <span class="atTitleText">Boost your spending power!</span>
                                                         </div>
 
                                                         <div class="accordionContent">
                                                             <ul class="listStyle2">
-                                                                <li>
-                                                                    Purchase Event tickets and get
-                                                                    access to the real and virtual
-                                                                    events or sale in the secondary
-                                                                    market
-                                                                </li>
+                                                                <li>Purchase Event tickets and get access to the real and virtual events or sale in the secondary market</li>
 
                                                                 <li>Get exclusive VIP access</li>
 
-                                                                <li>
-                                                                    Shop for digital and physical
-                                                                    merch and other collectibles
-                                                                </li>
+                                                                <li>Shop for digital and physical merch and other collectibles</li>
                                                             </ul>
                                                         </div>
                                                     </li>
 
                                                     <li class="acListOption3">
                                                         <div class="accodionTrigger active">
-                                                            <img
-                                                                src="images/ac-title-icon-3.svg"
-                                                                alt="..."
-                                                                class="atTriggerImg" />
+                                                            <img src="img/ac-title-icon-3.svg" alt="..." class="atTriggerImg" />
 
-                                                            <span class="atTitleText"
-                                                                >Get involved behind the
-                                                                scenes!</span
-                                                            >
+                                                            <span class="atTitleText">Get involved behind the scenes!</span>
                                                         </div>
 
-                                                        <div
-                                                            class="accordionContent"
-                                                            style="display: block">
+                                                        <div class="accordionContent" style="display: block">
                                                             <ul class="listStyle2">
-                                                                <li>
-                                                                    Event’s crowdfunding with an
-                                                                    Innovative staking model
-                                                                </li>
+                                                                <li>Event’s crowdfunding with an Innovative staking model</li>
 
-                                                                <li>
-                                                                    Own a share of the event’s venue
-                                                                    and earn profit
-                                                                </li>
+                                                                <li>Own a share of the event’s venue and earn profit</li>
 
-                                                                <li>
-                                                                    Earn profit through NFTs that
-                                                                    reward you and benefit artists
-                                                                </li>
+                                                                <li>Earn profit through NFTs that reward you and benefit artists</li>
                                                             </ul>
                                                         </div>
                                                     </li>
@@ -850,61 +527,19 @@
                                     <div class="col-md-auto">
                                         <div class="aSliderImgCol d-none d-lg-block">
                                             <div class="bannerImgCol">
-                                                <span class="bannerShape1"
-                                                    ><img
-                                                        data-offset="90"
-                                                        src="images/banner-shape-1.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerShape1"><img data-offset="90" src="img/banner-shape-1.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerShape2"
-                                                    ><img
-                                                        data-offset="30"
-                                                        src="images/banner-shape-2.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerShape2"><img data-offset="30" src="img/banner-shape-2.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBg"
-                                                    ><img
-                                                        data-offset="10"
-                                                        src="images/accordion-bg-2.png"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBg"><img data-offset="10" src="img/accordion-bg-2.png" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerImg"
-                                                    ><img
-                                                        data-offset="30"
-                                                        src="images/accordion-img-3.png"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerImg"><img data-offset="30" src="img/accordion-img-3.png" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBox1"
-                                                    ><img
-                                                        data-offset="20"
-                                                        src="images/banner-box-1.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBox1"><img data-offset="20" src="img/banner-box-1.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBox2"
-                                                    ><img
-                                                        data-offset="30"
-                                                        src="images/banner-box-2.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBox2"><img data-offset="30" src="img/banner-box-2.svg" alt="..." class="parallax-x" /></span>
 
-                                                <span class="bannerBox3"
-                                                    ><img
-                                                        data-offset="50"
-                                                        src="images/banner-box-3.svg"
-                                                        alt="..."
-                                                        class="parallax-x"
-                                                /></span>
+                                                <span class="bannerBox3"><img data-offset="50" src="img/banner-box-3.svg" alt="..." class="parallax-x" /></span>
                                             </div>
                                         </div>
                                     </div>
@@ -921,14 +556,12 @@
                 <div class="container">
                     <div class="visionContentMain">
                         <div class="visionContent">
-                            <h4 class="xlTitle textColor1">Vision</h4>
+                            <h1 class="xlTitle textColor1">Vision</h1>
 
                             <p>
-                                MetaShow is a digital world for any type of event. Event organizers
-                                can create fully virtual or augmented experiences with both physical
-                                venues and online virtual arenas. Participants can enjoy their
-                                favorite shows and events with friends in 3D environments with
-                                either 2D projections or immersive 360º video — all in real-time.
+                                MetaShow is a digital world for any type of event. Event organizers can create fully virtual or augmented experiences with both physical venues and
+                                online virtual arenas. Participants can enjoy their favorite shows and events with friends in 3D environments with either 2D projections or
+                                immersive 360º video — all in real-time.
                             </p>
                         </div>
                     </div>
@@ -939,15 +572,9 @@
                                 <div class="cs1Card">
                                     <div class="cs1IconCol">
                                         <span>
-                                            <img
-                                                src="images/3D-environments-icon-1.svg"
-                                                alt="..." />
+                                            <img src="img/3D-environments-icon-1.svg" alt="..." />
 
-                                            <img
-                                                src="images/3D-environments-icon-2.svg"
-                                                alt="..."
-                                                class="pImg parallax-x"
-                                                data-offset="10" />
+                                            <img src="img/3D-environments-icon-2.svg" alt="..." class="pImg parallax-x" data-offset="10" />
                                         </span>
                                     </div>
 
@@ -964,13 +591,9 @@
                                 <div class="cs1Card">
                                     <div class="cs1IconCol">
                                         <span>
-                                            <img src="images/2D-projections-icon-1.svg" alt="..." />
+                                            <img src="img/2D-projections-icon-1.svg" alt="..." />
 
-                                            <img
-                                                src="images/2D-projections-icon-2.svg"
-                                                alt="..."
-                                                class="pImg parallax-x"
-                                                data-offset="12" />
+                                            <img src="img/2D-projections-icon-2.svg" alt="..." class="pImg parallax-x" data-offset="12" />
                                         </span>
                                     </div>
 
@@ -987,13 +610,9 @@
                                 <div class="cs1Card">
                                     <div class="cs1IconCol">
                                         <span>
-                                            <img src="images/360-deg-icon-1.svg" alt="..." />
+                                            <img src="img/360-deg-icon-1.svg" alt="..." />
 
-                                            <img
-                                                src="images/360-deg-icon-2.svg"
-                                                alt="..."
-                                                class="pImg parallax-x"
-                                                data-offset="10" />
+                                            <img src="img/360-deg-icon-2.svg" alt="..." class="pImg parallax-x" data-offset="10" />
                                         </span>
                                     </div>
 
@@ -1015,7 +634,7 @@
             <div class="sectionSpace featuredSection">
                 <div class="container">
                     <div class="titleCol text-center text-md-start">
-                        <h4 class="xlTitle">Featured</h4>
+                        <h1 class="xlTitle">Featured</h1>
                     </div>
 
                     <div class="featuredContentMain">
@@ -1025,7 +644,7 @@
                                     <div class="col-12">
                                         <div class="fImgCol1">
                                             <div class="fImgCol fImg1">
-                                                <img src="images/featured-img-1.jpg" alt="..." />
+                                                <img src="img/featured-img-1.jpg" alt="..." />
                                             </div>
                                         </div>
                                     </div>
@@ -1033,10 +652,7 @@
                                     <div class="col col-md-12 fMbBtmSpace">
                                         <div class="featuredContentCol featureContent1">
                                             <div class="featuredTextCol">
-                                                <p>
-                                                    Integration of live streaming in the metaverse
-                                                    with live performers video
-                                                </p>
+                                                <p>Integration of live streaming in the metaverse with live performers video</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1044,7 +660,7 @@
                                     <div class="col-auto col-sm-6 col-md-12 fMbBtmSpace">
                                         <div class="fImgCol2">
                                             <div class="fImgCol fImg2">
-                                                <img src="images/featured-img-2.jpg" alt="..." />
+                                                <img src="img/featured-img-2.jpg" alt="..." />
                                             </div>
                                         </div>
                                     </div>
@@ -1057,9 +673,7 @@
                                         <div class="col-auto fMbBtmSpace">
                                             <div class="fImgCol3">
                                                 <div class="fImgCol fImg3">
-                                                    <img
-                                                        src="images/featured-img-3.jpg"
-                                                        alt="..." />
+                                                    <img src="img/featured-img-3.jpg" alt="..." />
                                                 </div>
                                             </div>
                                         </div>
@@ -1070,10 +684,8 @@
                                                     <div class="featuredContentCol featureContent2">
                                                         <div class="featuredTextCol">
                                                             <p>
-                                                                Live events, concerts, festivals,
-                                                                night clubs, theater, opera, one-man
-                                                                show, artists performance, fashion
-                                                                shows, sporting events
+                                                                Live events, concerts, festivals, night clubs, theater, opera, one-man show, artists performance, fashion shows,
+                                                                sporting events
                                                             </p>
                                                         </div>
                                                     </div>
@@ -1082,9 +694,7 @@
                                                 <div class="col-12 order-md-first fMbBtmSpace">
                                                     <div class="fImgCol4">
                                                         <div class="fImgCol fImg4">
-                                                            <img
-                                                                src="images/featured-img-4.jpg"
-                                                                alt="..." />
+                                                            <img src="img/featured-img-4.jpg" alt="..." />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1092,9 +702,7 @@
                                                 <div class="col-12">
                                                     <div class="fImgCol5">
                                                         <div class="fImgCol fImg5">
-                                                            <img
-                                                                src="images/featured-img-5.jpg"
-                                                                alt="..." />
+                                                            <img src="img/featured-img-5.jpg" alt="..." />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1109,7 +717,7 @@
                                     <div class="col-12">
                                         <div class="fImgCol6">
                                             <div class="fImgCol fImg6">
-                                                <img src="images/featured-img-6.jpg" alt="..." />
+                                                <img src="img/featured-img-6.jpg" alt="..." />
                                             </div>
                                         </div>
                                     </div>
@@ -1119,10 +727,7 @@
                                             <div class="col col-sm-7 col-md-12 fMbBtmSpace">
                                                 <div class="featuredContentCol featureContent3">
                                                     <div class="featuredTextCol">
-                                                        <p>
-                                                            Blockchain integration for ticket sales,
-                                                            royalties and collectibles
-                                                        </p>
+                                                        <p>Blockchain integration for ticket sales, royalties and collectibles</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1130,9 +735,7 @@
                                             <div class="col-auto col-sm col-md-12 fMbBtmSpace">
                                                 <div class="fImgCol7">
                                                     <div class="fImgCol fImg7">
-                                                        <img
-                                                            src="images/featured-img-7.jpg"
-                                                            alt="..." />
+                                                        <img src="img/featured-img-7.jpg" alt="..." />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1144,9 +747,7 @@
                                             <div class="col-auto col-sm-5 col-md-12">
                                                 <div class="fImgCol8">
                                                     <div class="fImgCol fImg8">
-                                                        <img
-                                                            src="images/featured-img-8.jpg"
-                                                            alt="..." />
+                                                        <img src="img/featured-img-8.jpg" alt="..." />
                                                     </div>
                                                 </div>
                                             </div>
@@ -1172,7 +773,7 @@
             <div class="sectionSpace">
                 <div class="container">
                     <div class="titleCol">
-                        <h4 class="xlTitle text-center">How it works</h4>
+                        <h1 class="xlTitle text-center">How it works</h1>
                     </div>
 
                     <div class="workSection">
@@ -1181,16 +782,13 @@
                                 <div class="col-md">
                                     <div class="workCardCol wCard1">
                                         <div class="wfIcon">
-                                            <img src="images/work-icon-1.svg" alt="..." />
+                                            <img src="img/work-icon-1.svg" alt="..." />
                                         </div>
 
                                         <div class="wCardContentCol">
                                             <span class="wfNumber">#1</span>
 
-                                            <p>
-                                                Sign up to MetaShow using your google account or
-                                                email
-                                            </p>
+                                            <p>Sign up to MetaShow using your google account or email</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1198,16 +796,13 @@
                                 <div class="col-md">
                                     <div class="workCardCol wCard2">
                                         <div class="wfIcon">
-                                            <img src="images/work-icon-2.svg" alt="..." />
+                                            <img src="img/work-icon-2.svg" alt="..." />
                                         </div>
 
                                         <div class="wCardContentCol">
                                             <span class="wfNumber">#2</span>
 
-                                            <p>
-                                                Browse our collection of Shows or register for an
-                                                upcoming event
-                                            </p>
+                                            <p>Browse our collection of Shows or register for an upcoming event</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1215,15 +810,13 @@
                                 <div class="col-md">
                                     <div class="workCardCol wCard3">
                                         <div class="wfIcon">
-                                            <img src="images/work-icon-3.svg" alt="..." />
+                                            <img src="img/work-icon-3.svg" alt="..." />
                                         </div>
 
                                         <div class="wCardContentCol">
                                             <span class="wfNumber">#3</span>
 
-                                            <p>
-                                                Purchase an NFT ticket to the Show ( Basic or VIP )
-                                            </p>
+                                            <p>Purchase an NFT ticket to the Show ( Basic or VIP )</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1231,7 +824,7 @@
                                 <div class="col-md">
                                     <div class="workCardCol wCard4">
                                         <div class="wfIcon">
-                                            <img src="images/work-icon-4.svg" alt="..." />
+                                            <img src="img/work-icon-4.svg" alt="..." />
                                         </div>
 
                                         <div class="wCardContentCol">
@@ -1245,7 +838,7 @@
                                 <div class="col-md-auto">
                                     <div class="workCardCol wCard5">
                                         <div class="wfIcon">
-                                            <img src="images/work-icon-5.svg" alt="..." />
+                                            <img src="img/work-icon-5.svg" alt="..." />
                                         </div>
 
                                         <div class="wCardContentCol">
@@ -1265,12 +858,12 @@
         <section>
             <div class="sectionSpace pb-0">
                 <div class="gRightShape" data-parallax='{"y": -100, "smoothness": 20}'>
-                    <img src="images/g-right-shape.svg" alt="..." />
+                    <img src="img/g-right-shape.svg" alt="..." />
                 </div>
 
                 <div class="container">
                     <div class="titleCol text-center">
-                        <h4 class="xlTitle textColor1">Ecosystem</h4>
+                        <h1 class="xlTitle textColor1">Ecosystem</h1>
                     </div>
                 </div>
 
@@ -1282,11 +875,7 @@
                             </div>
 
                             <div class="esImgCol">
-                                <img
-                                    src="images/ecosystem-img.png"
-                                    alt="..."
-                                    class="parallax-x"
-                                    data-offset="35" />
+                                <img src="img/ecosystem-img.png" alt="..." class="parallax-x" data-offset="35" />
                             </div>
 
                             <div class="esContentCol parallax-x" data-offset="20">
@@ -1294,11 +883,11 @@
                                     <li>
                                         <div class="esCard">
                                             <div class="esCardIconCol">
-                                                <img src="images/artists-icon.svg" alt="..." />
+                                                <img src="img/artists-icon.svg" alt="..." />
                                             </div>
 
                                             <div class="esCardContent">
-                                                <h4>Artists</h4>
+                                                <h2>Artists</h2>
 
                                                 <p>play to earn</p>
                                             </div>
@@ -1308,13 +897,11 @@
                                     <li>
                                         <div class="esCard">
                                             <div class="esCardIconCol">
-                                                <img
-                                                    src="images/event-planners-icon.svg"
-                                                    alt="..." />
+                                                <img src="img/event-planners-icon.svg" alt="..." />
                                             </div>
 
                                             <div class="esCardContent">
-                                                <h4>Event planners</h4>
+                                                <h2>Event planners</h2>
 
                                                 <p>want to earn</p>
                                             </div>
@@ -1324,13 +911,11 @@
                                     <li>
                                         <div class="esCard">
                                             <div class="esCardIconCol">
-                                                <img
-                                                    src="images/data-consumers-icon.svg"
-                                                    alt="..." />
+                                                <img src="img/data-consumers-icon.svg" alt="..." />
                                             </div>
 
                                             <div class="esCardContent">
-                                                <h4>Data consumers</h4>
+                                                <h2>Data consumers</h2>
 
                                                 <p>analyze and monetize</p>
                                             </div>
@@ -1340,11 +925,11 @@
                                     <li>
                                         <div class="esCard">
                                             <div class="esCardIconCol">
-                                                <img src="images/advertisers-icon.svg" alt="..." />
+                                                <img src="img/advertisers-icon.svg" alt="..." />
                                             </div>
 
                                             <div class="esCardContent">
-                                                <h4>Advertisers</h4>
+                                                <h2>Advertisers</h2>
 
                                                 <p>sponsor and promote</p>
                                             </div>
@@ -1354,11 +939,11 @@
                                     <li>
                                         <div class="esCard">
                                             <div class="esCardIconCol">
-                                                <img src="images/users-icon.svg" alt="..." />
+                                                <img src="img/users-icon.svg" alt="..." />
                                             </div>
 
                                             <div class="esCardContent">
-                                                <h4>Users</h4>
+                                                <h2>Users</h2>
 
                                                 <p>experience, collect, and earn</p>
                                             </div>
@@ -1368,11 +953,11 @@
                                     <li>
                                         <div class="esCard">
                                             <div class="esCardIconCol">
-                                                <img src="images/investors-icon.svg" alt="..." />
+                                                <img src="img/investors-icon.svg" alt="..." />
                                             </div>
 
                                             <div class="esCardContent">
-                                                <h4>Investors</h4>
+                                                <h2>Investors</h2>
 
                                                 <p>rent or sell virtual plots</p>
                                             </div>
@@ -1389,29 +974,20 @@
         <section id="tokenId">
             <div class="sectionSpace tokenCol pb-0">
                 <div class="tokenShape1">
-                    <img
-                        src="images/token-shape-1.svg"
-                        alt="..."
-                        data-parallax='{"y": -100, "smoothness": 30}' />
+                    <img src="img/token-shape-1.svg" alt="..." data-parallax='{"y": -100, "smoothness": 30}' />
                 </div>
 
                 <div class="tokenShape2">
-                    <img
-                        src="images/token-shape-2.svg"
-                        alt="..."
-                        data-parallax='{"y": 150, "smoothness": 50}' />
+                    <img src="img/token-shape-2.svg" alt="..." data-parallax='{"y": 150, "smoothness": 50}' />
                 </div>
 
                 <div class="tokenShape3">
-                    <img
-                        src="images/token-shape-3.svg"
-                        alt="..."
-                        data-parallax='{"y": -50, "smoothness": 20}' />
+                    <img src="img/token-shape-3.svg" alt="..." data-parallax='{"y": -50, "smoothness": 20}' />
                 </div>
 
                 <div class="container">
                     <div class="titleCol">
-                        <h4 class="xlTitle text-center">Tokens</h4>
+                        <h1 class="xlTitle text-center">Tokens</h1>
                     </div>
                 </div>
 
@@ -1422,7 +998,7 @@
                                 <div class="swiper-slide">
                                     <div class="tokenCardCol">
                                         <div class="tokenCard">
-                                            <h4>Users can stake their tokens to:</h4>
+                                            <h2>Users can stake their tokens to:</h2>
 
                                             <ul class="listStyle">
                                                 <li>Get more rewards</li>
@@ -1433,9 +1009,7 @@
 
                                                 <li>Earn NFT collaborations with partners</li>
 
-                                                <li>
-                                                    Earn redistribution of 20% of the platform fees
-                                                </li>
+                                                <li>Earn redistribution of 20% of the platform fees</li>
 
                                                 <li>Stake your ADA and earn your NFT Ticket</li>
                                             </ul>
@@ -1446,10 +1020,7 @@
                                 <div class="swiper-slide">
                                     <div class="tokenCardCol">
                                         <div class="tokenCard">
-                                            <h4>
-                                                Users can use tokens to access services in the
-                                                metaverse:
-                                            </h4>
+                                            <h2>Users can use tokens to access services in the metaverse:</h2>
 
                                             <ul class="listStyle">
                                                 <li>Discounts on tickets & goods</li>
@@ -1462,10 +1033,7 @@
 
                                                 <li>Trading of tokens for profit</li>
 
-                                                <li>
-                                                    Users can build an event venue and monetise
-                                                    their plots of land
-                                                </li>
+                                                <li>Users can build an event venue and monetise their plots of land</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1474,12 +1042,10 @@
                                 <div class="swiper-slide">
                                     <div class="tokenCardCol">
                                         <div class="tokenCard">
-                                            <h4>Businesses buy tokens to access services:</h4>
+                                            <h2>Businesses buy tokens to access services:</h2>
 
                                             <ul class="listStyle">
-                                                <li>
-                                                    Purchase of ads, either general or targeted ads
-                                                </li>
+                                                <li>Purchase of ads, either general or targeted ads</li>
 
                                                 <li>Purchase of data sets</li>
 
@@ -1503,7 +1069,7 @@
             <div class="sectionSpace roadmapSection">
                 <div class="container">
                     <div class="titleCol">
-                        <h4 class="xlTitle">Roadmap</h4>
+                        <h2 class="xlTitle">Roadmap</h2>
                     </div>
                 </div>
 
@@ -1515,12 +1081,10 @@
                                     <div class="roadmapCard">
                                         <div class="roadmapTopCol">
                                             <div class="rmIconCol">
-                                                <img src="images/roadmap-icon-1.svg" alt="..." />
+                                                <img src="img/roadmap-icon-1.svg" alt="..." />
                                             </div>
 
-                                            <div class="rmTitleCol">
-                                                <span>Q2</span> <span>2022</span>
-                                            </div>
+                                            <div class="rmTitleCol"><span>Q2</span> <span>2022</span></div>
                                         </div>
 
                                         <div class="roadmapBtmCol">
@@ -1545,12 +1109,10 @@
                                     <div class="roadmapCard">
                                         <div class="roadmapTopCol">
                                             <div class="rmIconCol">
-                                                <img src="images/roadmap-icon-2.svg" alt="..." />
+                                                <img src="img/roadmap-icon-2.svg" alt="..." />
                                             </div>
 
-                                            <div class="rmTitleCol">
-                                                <span>Q3</span> <span>2022</span>
-                                            </div>
+                                            <div class="rmTitleCol"><span>Q3</span> <span>2022</span></div>
                                         </div>
 
                                         <div class="roadmapBtmCol">
@@ -1571,12 +1133,10 @@
                                     <div class="roadmapCard">
                                         <div class="roadmapTopCol">
                                             <div class="rmIconCol">
-                                                <img src="images/roadmap-icon-3.svg" alt="..." />
+                                                <img src="img/roadmap-icon-3.svg" alt="..." />
                                             </div>
 
-                                            <div class="rmTitleCol">
-                                                <span>Q4</span> <span>2022</span>
-                                            </div>
+                                            <div class="rmTitleCol"><span>Q4</span> <span>2022</span></div>
                                         </div>
 
                                         <div class="roadmapBtmCol">
@@ -1595,12 +1155,10 @@
                                     <div class="roadmapCard">
                                         <div class="roadmapTopCol">
                                             <div class="rmIconCol">
-                                                <img src="images/roadmap-icon-4.svg" alt="..." />
+                                                <img src="img/roadmap-icon-4.svg" alt="..." />
                                             </div>
 
-                                            <div class="rmTitleCol">
-                                                <span>Q1</span> <span>2023</span>
-                                            </div>
+                                            <div class="rmTitleCol"><span>Q1</span> <span>2023</span></div>
                                         </div>
 
                                         <div class="roadmapBtmCol">
@@ -1621,13 +1179,11 @@
             <div class="sectionSpace faqSection">
                 <div class="container">
                     <div class="titleCol text-center">
-                        <h4 class="lgTitle">FAQ</h4>
+                        <h1 class="lgTitle">FAQ</h1>
                     </div>
 
                     <div class="faqContentCol">
-                        <div
-                            class="accordion accordion-flush accordionStyle"
-                            id="accordionFlushExample">
+                        <div class="accordion accordion-flush accordionStyle" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button
@@ -1641,16 +1197,11 @@
                                     </button>
                                 </h2>
 
-                                <div
-                                    id="flush-collapseOne"
-                                    class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingOne"
-                                    data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>
-                                            There is no limit to how many people can attend an
-                                            event, however we will impose a soft limit on virtual
-                                            room sizes while we are in Beta.
+                                            There is no limit to how many people can attend an event, however we will impose a soft limit on virtual room sizes while we are in
+                                            Beta.
                                         </p>
                                     </div>
                                 </div>
@@ -1669,16 +1220,11 @@
                                     </button>
                                 </h2>
 
-                                <div
-                                    id="flush-collapseTwo"
-                                    class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingTwo"
-                                    data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit. Natus alias repellendus assumenda tenetur enim,
-                                            quas delectus pariatur aliquid blanditiis sit.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias repellendus assumenda tenetur enim, quas delectus pariatur aliquid
+                                            blanditiis sit.
                                         </p>
                                     </div>
                                 </div>
@@ -1697,16 +1243,11 @@
                                     </button>
                                 </h2>
 
-                                <div
-                                    id="flush-collapseThree"
-                                    class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingThree"
-                                    data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit. Natus alias repellendus assumenda tenetur enim,
-                                            quas delectus pariatur aliquid blanditiis sit.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias repellendus assumenda tenetur enim, quas delectus pariatur aliquid
+                                            blanditiis sit.
                                         </p>
                                     </div>
                                 </div>
@@ -1725,16 +1266,11 @@
                                     </button>
                                 </h2>
 
-                                <div
-                                    id="flush-collapseFour"
-                                    class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingFour"
-                                    data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit. Natus alias repellendus assumenda tenetur enim,
-                                            quas delectus pariatur aliquid blanditiis sit.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias repellendus assumenda tenetur enim, quas delectus pariatur aliquid
+                                            blanditiis sit.
                                         </p>
                                     </div>
                                 </div>
@@ -1753,16 +1289,11 @@
                                     </button>
                                 </h2>
 
-                                <div
-                                    id="flush-collapseFive"
-                                    class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingFive"
-                                    data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit. Natus alias repellendus assumenda tenetur enim,
-                                            quas delectus pariatur aliquid blanditiis sit.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias repellendus assumenda tenetur enim, quas delectus pariatur aliquid
+                                            blanditiis sit.
                                         </p>
                                     </div>
                                 </div>
@@ -1776,19 +1307,16 @@
         <section id="teamId">
             <div class="sectionSpace teamSection pb-0">
                 <div class="teamShape1" data-parallax='{"y": -100, "smoothness": 20}'>
-                    <img src="images/team-shape-1.svg" alt="..." />
+                    <img src="img/team-shape-1.svg" alt="..." />
                 </div>
 
                 <div class="teamShape2">
-                    <img
-                        src="images/team-shape-2.svg"
-                        alt="..."
-                        data-parallax='{"y": -150, "smoothness": 20}' />
+                    <img src="img/team-shape-2.svg" alt="..." data-parallax='{"y": -150, "smoothness": 20}' />
                 </div>
 
                 <div class="container">
                     <div class="titleCol">
-                        <h4 class="xlTitle textColor1">The Team</h4>
+                        <h1 class="xlTitle textColor1">The Team</h1>
                     </div>
 
                     <div class="teamContent">
@@ -1797,39 +1325,26 @@
                                 <div class="teamCard">
                                     <div class="teamImgCol">
                                         <span class="teamImg">
-                                            <img src="images/team-img-1.jpg" alt="..." />
+                                            <img src="img/team-img-1.jpg" alt="..." />
                                         </span>
                                     </div>
 
                                     <div class="teamContentCol">
                                         <div class="teamContentTopCol">
-                                            <h4>Remy Baldo</h4>
+                                            <h2>Remy Baldo</h2>
 
-                                            <span class="designationText"
-                                                >Strategic & Business developer</span
-                                            >
+                                            <span class="designationText">Strategic & Business developer</span>
 
                                             <div class="teamSocialLink">
-                                                <a
-                                                    href="https://www.linkedin.com/in/r%C3%A9my-baldo-678a0a15a/"
-                                                    target="_blank"
-                                                    rel="nofollow"
-                                                    ><span>Linkedin</span>
-                                                    <span
-                                                        ><img
-                                                            src="images/linkedin-icon.svg"
-                                                            alt="Remy Baldo - LinkedIn" /></span
+                                                <a href="https://www.linkedin.com/in/r%C3%A9my-baldo-678a0a15a/" target="_blank" rel="nofollow"
+                                                    ><span>Linkedin</span> <span><img src="img/linkedin-icon.svg" alt="Remy Baldo - LinkedIn" /></span
                                                 ></a>
                                             </div>
                                         </div>
 
                                         <div class="teamContentBtmCol">
                                             <ul class="listStyle">
-                                                <li>
-                                                    10 years event production in the electronic
-                                                    music industry, managing teams and vcreating the
-                                                    identity of events
-                                                </li>
+                                                <li>10 years event production in the electronic music industry, managing teams and vcreating the identity of events</li>
 
                                                 <li>2 years founder in blockchain project</li>
                                             </ul>
@@ -1842,28 +1357,19 @@
                                 <div class="teamCard">
                                     <div class="teamImgCol">
                                         <span class="teamImg">
-                                            <img src="images/team-img-2.jpg" alt="..." />
+                                            <img src="img/team-img-2.jpg" alt="..." />
                                         </span>
                                     </div>
 
                                     <div class="teamContentCol">
                                         <div class="teamContentTopCol">
-                                            <h4>Jonathan Martinez</h4>
+                                            <h2>Jonathan Martinez</h2>
 
-                                            <span class="designationText"
-                                                >Strategic & Business developer</span
-                                            >
+                                            <span class="designationText">Strategic & Business developer</span>
 
                                             <div class="teamSocialLink">
-                                                <a
-                                                    href="https://www.linkedin.com/in/jonathan-martinez-781a69143/"
-                                                    target="_blank"
-                                                    rel="nofollow"
-                                                    ><span>Linkedin</span>
-                                                    <span
-                                                        ><img
-                                                            src="images/linkedin-icon.svg"
-                                                            alt="Jonathan Martinez - LinkedIn" /></span
+                                                <a href="https://www.linkedin.com/in/jonathan-martinez-781a69143/" target="_blank" rel="nofollow"
+                                                    ><span>Linkedin</span> <span><img src="img/linkedin-icon.svg" alt="Jonathan Martinez - LinkedIn" /></span
                                                 ></a>
                                             </div>
                                         </div>
@@ -1871,15 +1377,10 @@
                                         <div class="teamContentBtmCol">
                                             <ul class="listStyle">
                                                 <li>
-                                                    A 20-year track record in organizing events of
-                                                    all sizes from festivals to exclusive private
-                                                    shows. Martinez has worked with festival
-                                                    founders and promoters as well as artists and
-                                                    their management. In addition, he acts as a
-                                                    technical advisor and team manager. As a
-                                                    blockchain enthusiast for two years, he
-                                                    understands how to innovate in all aspects of an
-                                                    entertainment event regardless of its size.
+                                                    A 20-year track record in organizing events of all sizes from festivals to exclusive private shows. Martinez has worked with
+                                                    festival founders and promoters as well as artists and their management. In addition, he acts as a technical advisor and team
+                                                    manager. As a blockchain enthusiast for two years, he understands how to innovate in all aspects of an entertainment event
+                                                    regardless of its size.
                                                 </li>
 
                                                 <!-- <li>2 years founder in blockchain project</li> -->
@@ -1893,26 +1394,19 @@
                                 <div class="teamCard">
                                     <div class="teamImgCol">
                                         <span class="teamImg">
-                                            <img src="images/team-img-3.jpg" alt="..." />
+                                            <img src="img/team-img-3.jpg" alt="..." />
                                         </span>
                                     </div>
 
                                     <div class="teamContentCol">
                                         <div class="teamContentTopCol">
-                                            <h4>Gianluca Allaria</h4>
+                                            <h2>Gianluca Allaria</h2>
 
                                             <span class="designationText">CMO</span>
 
                                             <div class="teamSocialLink">
-                                                <a
-                                                    href="https://www.linkedin.com/in/gianluca-allaria/"
-                                                    target="_blank"
-                                                    rel="nofollow"
-                                                    ><span>Linkedin</span>
-                                                    <span
-                                                        ><img
-                                                            src="images/linkedin-icon.svg"
-                                                            alt="Gianluca Allaria - LinkedIn" /></span
+                                                <a href="https://www.linkedin.com/in/gianluca-allaria/" target="_blank" rel="nofollow"
+                                                    ><span>Linkedin</span> <span><img src="img/linkedin-icon.svg" alt="Gianluca Allaria - LinkedIn" /></span
                                                 ></a>
                                             </div>
                                         </div>
@@ -1920,18 +1414,11 @@
                                         <div class="teamContentBtmCol">
                                             <ul class="listStyle">
                                                 <li>
-                                                    A 15-year career in international media, with a
-                                                    specialization in live music. I've worked for
-                                                    organizations such as the Eurovision. I've
-                                                    negotiated broadcast rights for festivals
-                                                    including Tomorrowland, Sonar, and the Montreux
-                                                    Jazz Festival
+                                                    A 15-year career in international media, with a specialization in live music. I've worked for organizations such as the
+                                                    Eurovision. I've negotiated broadcast rights for festivals including Tomorrowland, Sonar, and the Montreux Jazz Festival
                                                 </li>
 
-                                                <li>
-                                                    I also have a strong background in production
-                                                    and marketing
-                                                </li>
+                                                <li>I also have a strong background in production and marketing</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1942,26 +1429,19 @@
                                 <div class="teamCard">
                                     <div class="teamImgCol">
                                         <span class="teamImg">
-                                            <img src="images/team-img-4.jpg" alt="..." />
+                                            <img src="img/team-img-4.jpg" alt="..." />
                                         </span>
                                     </div>
 
                                     <div class="teamContentCol">
                                         <div class="teamContentTopCol">
-                                            <h4>Mark Jivko</h4>
+                                            <h2>Mark Jivko</h2>
 
                                             <span class="designationText">CTO</span>
 
                                             <div class="teamSocialLink">
-                                                <a
-                                                    href="https://www.linkedin.com/in/markjivko/"
-                                                    target="_blank"
-                                                    rel="nofollow"
-                                                    ><span>Linkedin</span>
-                                                    <span
-                                                        ><img
-                                                            src="images/linkedin-icon.svg"
-                                                            alt="Mark Jivko - LinkedIn" /></span
+                                                <a href="https://www.linkedin.com/in/markjivko/" target="_blank" rel="nofollow"
+                                                    ><span>Linkedin</span> <span><img src="img/linkedin-icon.svg" alt="Mark Jivko - LinkedIn" /></span
                                                 ></a>
                                             </div>
                                         </div>
@@ -1969,14 +1449,9 @@
                                         <div class="teamContentBtmCol">
                                             <ul class="listStyle">
                                                 <li>
-                                                    An accomplished Chief Technology Officer with
-                                                    13+ years’ experience as a software developer,
-                                                    Mark is skilled in Software Architecture,
-                                                    Software Development and Startups. Previously
-                                                    CTO and Co-Founder of Stephino Software, a
-                                                    studio with over 100 million app downloads in 6
-                                                    years, Mark is the sole developer of numerous
-                                                    Open Source projects.
+                                                    An accomplished Chief Technology Officer with 13+ years’ experience as a software developer, Mark is skilled in Software
+                                                    Architecture, Software Development and Startups. Previously CTO and Co-Founder of Stephino Software, a studio with over 100
+                                                    million app downloads in 6 years, Mark is the sole developer of numerous Open Source projects.
                                                 </li>
                                             </ul>
                                         </div>
@@ -1994,12 +1469,9 @@
                 <div class="container">
                     <div class="partnerTitle">
                         <div class="pTitleInnerCol">
-                            <h4 class="xlTitle">Partners</h4>
+                            <h1 class="xlTitle">Partners</h1>
 
-                            <img
-                                class="pTitleBoxImg"
-                                src="images/partner-title-shape.svg"
-                                alt="..." />
+                            <img class="pTitleBoxImg" src="img/partner-title-shape.svg" alt="..." />
                         </div>
                     </div>
 
@@ -2007,50 +1479,41 @@
                         <ul>
                             <li>
                                 <div class="pImgCol">
-                                    <a href="https://www.move.ai/" target="_blank"
-                                        ><img src="images/move-logo.svg" alt="..."
-                                    /></a>
+                                    <a href="https://www.move.ai/" target="_blank"><img src="img/move-logo.svg" alt="..." /></a>
                                 </div>
 
                                 <div class="pNameCol">
-                                    <a href="https://www.move.ai/" target="_blank" class="pName"
-                                        >move.ai</a
-                                    >
+                                    <a href="https://www.move.ai/" target="_blank" class="pName">move.ai</a>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="pImgCol">
-                                    <a href="https://www.delices-sonores.com/" target="_blank"
-                                        ><img src="images/delices-sonores.png" alt="..."
-                                    /></a>
+                                    <a href="https://www.delices-sonores.com/" target="_blank"><img src="img/delices-sonores.png" alt="..." /></a>
                                 </div>
 
                                 <div class="pNameCol">
-                                    <a
-                                        href="https://www.delices-sonores.com/"
-                                        target="_blank"
-                                        class="pName"
-                                        >delices-sonores.com</a
-                                    >
+                                    <a href="https://www.delices-sonores.com/" target="_blank" class="pName">delices-sonores.com</a>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="pImgCol">
-                                    <a href="https://genius-x.co/" target="_blank"
-                                        ><img src="images/genius-logo.svg" alt="Genius-X"
-                                    /></a>
+                                    <a href="https://genius-x.co/" target="_blank"><img src="img/genius-logo.svg" alt="Genius-X" /></a>
                                 </div>
 
                                 <div class="pNameCol">
-                                    <a
-                                        href="https://genius-x.co/"
-                                        target="_blank"
-                                        rel="nofollow"
-                                        class="pName"
-                                        >genius-x.co</a
-                                    >
+                                    <a href="https://genius-x.co/" target="_blank" rel="nofollow" class="pName">genius-x.co</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="pImgCol">
+                                    <a href="https://www.senseofspace.io/" target="_blank"><img src="img/senseofspace-logo.svg" alt="Sense of space" /></a>
+                                </div>
+
+                                <div class="pNameCol">
+                                    <a href="https://www.senseofspace.io/" target="_blank" rel="nofollow" class="pName">senseofspace.io</a>
                                 </div>
                             </li>
                         </ul>
@@ -2065,19 +1528,17 @@
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="contactCol">
-                                <h4 class="xlTitle">Contact <span class="d-md-none">Us</span></h4>
+                                <h1 class="xlTitle">Contact <span class="d-md-none">Us</span></h1>
 
                                 <p>Find out more or get involved</p>
 
-                                <a href="mailto:hello@meta-show.co" class="btn btnPrimary"
-                                    >Let’s talk</a
-                                >
+                                <a href="mailto:hello@meta-show.co" class="btn btnPrimary">Let’s talk</a>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="contactImgCol">
-                                <img src="images/contact-img.svg" alt="..." />
+                                <img src="img/contact-img.svg" alt="..." />
                             </div>
                         </div>
                     </div>
@@ -2088,47 +1549,47 @@
                             <div class="row">
                                 <div class="col-md-6 col-lg-auto">
                                     <div class="avilLogoCol webBrowsers">
-                                        <h4>WEB BROWSERS</h4>
+                                        <h2>WEB BROWSERS</h2>
                                         <ul>
-                                            <li><img src="images/chrome-icon.svg" alt="..." /></li>
-                                            <li><img src="images/safari-icon.svg" alt="..." /></li>
-                                            <li><img src="images/edge-icon.svg" alt="..." /></li>
-                                            <li><img src="images/firefox-icon.svg" alt="..." /></li>
-                                            <li><img src="images/opera-icon.svg" alt="..." /></li>
+                                            <li><img src="img/chrome-icon.svg" alt="..." /></li>
+                                            <li><img src="img/safari-icon.svg" alt="..." /></li>
+                                            <li><img src="img/edge-icon.svg" alt="..." /></li>
+                                            <li><img src="img/firefox-icon.svg" alt="..." /></li>
+                                            <li><img src="img/opera-icon.svg" alt="..." /></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-auto">
                                     <div class="avilLogoCol mobileDevices">
-                                        <h4>MOBILE DEVICES</h4>
+                                        <h2>MOBILE DEVICES</h2>
                                         <ul>
-                                            <li><img src="images/apple-icon.svg" alt="..." /></li>
-                                            <li><img src="images/android-icon.svg" alt="..." /></li>
+                                            <li><img src="img/apple-icon.svg" alt="..." /></li>
+                                            <li><img src="img/android-icon.svg" alt="..." /></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!-- <div class="col-md-6 col-lg-auto">
                                     <div class="avilLogoCol smartTv">
-                                        <h4>SMART TV</h4>
+                                        <h2>SMART TV</h2>
                                         <ul>
-                                            <li><img src="images/webos-icon.svg" alt="..." /></li>
+                                            <li><img src="img/webos-icon.svg" alt="..." /></li>
                                             <li>
-                                                <img src="images/androidtv-icon.svg" alt="..." />
+                                                <img src="img/androidtv-icon.svg" alt="..." />
                                             </li>
-                                            <li><img src="images/tvplus-icon.svg" alt="..." /></li>
+                                            <li><img src="img/tvplus-icon.svg" alt="..." /></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-auto">
                                     <div class="avilLogoCol consoles">
-                                        <h4>CONSOLES</h4>
+                                        <h2>CONSOLES</h2>
                                         <ul>
                                             <li>
-                                                <img src="images/playstation-icon.svg" alt="..." />
+                                                <img src="img/playstation-icon.svg" alt="..." />
                                             </li>
-                                            <li><img src="images/xbox-icon.svg" alt="..." /></li>
+                                            <li><img src="img/xbox-icon.svg" alt="..." /></li>
                                             <li>
-                                                <img src="images/nintendo-icon.svg" alt="..." />
+                                                <img src="img/nintendo-icon.svg" alt="..." />
                                             </li>
                                         </ul>
                                     </div>
@@ -2148,7 +1609,7 @@
                             <div class="row align-items-center">
                                 <div class="col-lg">
                                     <div class="footerLogo">
-                                        <img src="images/logo.svg" alt="..." />
+                                        <img src="img/logo.svg" alt="..." />
                                     </div>
                                 </div>
 
@@ -2156,49 +1617,23 @@
                                     <div class="footerLinks">
                                         <ul>
                                             <li>
-                                                <span
-                                                    class="data-scroll"
-                                                    data-scroll-to="#howItWorkId"
-                                                    ><a href="javascript:void(0)" class="nav-link"
-                                                        >How it works</a
-                                                    ></span
-                                                >
+                                                <span class="data-scroll" data-scroll-to="#howItWorkId"><span class="nav-link">How it works</span></span>
                                             </li>
 
                                             <li>
-                                                <span class="data-scroll" data-scroll-to="#tokenId"
-                                                    ><a href="javascript:void(0)" class="nav-link"
-                                                        >Tokens</a
-                                                    ></span
-                                                >
+                                                <span class="data-scroll" data-scroll-to="#tokenId"><span class="nav-link">Tokens</span></span>
                                             </li>
 
                                             <li>
-                                                <span
-                                                    class="data-scroll"
-                                                    data-scroll-to="#roadmapId"
-                                                    ><a href="javascript:void(0)" class="nav-link"
-                                                        >Roadmap</a
-                                                    ></span
-                                                >
+                                                <span class="data-scroll" data-scroll-to="#roadmapId"><span class="nav-link">Roadmap</span></span>
                                             </li>
 
                                             <li>
-                                                <span class="data-scroll" data-scroll-to="#teamId"
-                                                    ><a href="javascript:void(0)" class="nav-link"
-                                                        >Team</a
-                                                    ></span
-                                                >
+                                                <span class="data-scroll" data-scroll-to="#teamId"><span class="nav-link">Team</span></span>
                                             </li>
 
                                             <li>
-                                                <span
-                                                    class="data-scroll"
-                                                    data-scroll-to="#contactId"
-                                                    ><a href="javascript:void(0)" class="nav-link"
-                                                        >Contact us</a
-                                                    ></span
-                                                >
+                                                <span class="data-scroll" data-scroll-to="#contactId"><span class="nav-link">Contact us</span></span>
                                             </li>
                                         </ul>
                                     </div>
@@ -2213,61 +1648,27 @@
                                         <div class="col-lg-auto">
                                             <ul class="footerSocialIcons">
                                                 <li>
-                                                    <a
-                                                        rel="nofollow"
-                                                        target="_blank"
-                                                        href="https://www.linkedin.com/company/meta-show"
-                                                        ><img
-                                                            src="images/linkedin.svg"
-                                                            alt="LinkedIn"
+                                                    <a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/meta-show"
+                                                        ><img src="img/linkedin.svg" alt="LinkedIn"
                                                     /></a>
                                                 </li>
 
                                                 <li>
-                                                    <a
-                                                        rel="nofollow"
-                                                        target="_blank"
-                                                        href="https://t.me/metashowofficial"
-                                                        ><img
-                                                            src="images/telegram.svg"
-                                                            alt="Telegram"
-                                                    /></a>
+                                                    <a rel="nofollow" target="_blank" href="https://t.me/metashowofficial"><img src="img/telegram.svg" alt="Telegram" /></a>
                                                 </li>
 
                                                 <li>
-                                                    <a
-                                                        rel="nofollow"
-                                                        target="_blank"
-                                                        href="https://discord.gg/A9yg56Hc6v"
-                                                        ><img
-                                                            src="images/discord.svg"
-                                                            alt="Discord"
-                                                    /></a>
+                                                    <a rel="nofollow" target="_blank" href="https://discord.gg/A9yg56Hc6v"><img src="img/discord.svg" alt="Discord" /></a>
                                                 </li>
 
                                                 <li>
-                                                    <a
-                                                        rel="nofollow"
-                                                        target="_blank"
-                                                        href="https://twitter.com/HelloMetashow"
-                                                        ><img
-                                                            src="images/twitter.svg"
-                                                            alt="Twitter"
-                                                    /></a>
+                                                    <a rel="nofollow" target="_blank" href="https://twitter.com/HelloMetashow"><img src="img/twitter.svg" alt="Twitter" /></a>
                                                 </li>
                                             </ul>
                                         </div>
 
                                         <div class="col-lg">
-                                            <span class="incBy"
-                                                >Incubated by
-                                                <a
-                                                    rel="nofollow"
-                                                    target="_blank"
-                                                    href="https://genius-x.co/"
-                                                    >GENIUS X</a
-                                                ></span
-                                            >
+                                            <span class="incBy">Incubated by <a rel="nofollow" target="_blank" href="https://genius-x.co/">GENIUS X</a></span>
                                         </div>
                                     </div>
                                 </div>
@@ -2283,12 +1684,11 @@
                 </div>
             </div>
         </footer>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="js/parallax-scroll.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/gsap.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/swiper-bundle.min.js"></script>
+        <script src="./js/parallax-scroll.js"></script>
+        <script src="./js/functions.js"></script>
     </body>
 </html>
