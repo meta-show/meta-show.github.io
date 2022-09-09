@@ -59,7 +59,7 @@ $(document).ready(function () {
                     }
                 ],
                 display: "fullscreen",
-                orientation: "landscape"
+                orientation: "portrait"
             };
             var manifestURL = URL.createObjectURL(
                 new Blob([JSON.stringify(myDynamicManifest)], {
