@@ -1,6 +1,6 @@
 /* global self, caches, fetch */
 // Service Worker configuration
-const staticCacheName = "metashow-0.0.1";
+const staticCacheName = "metashow-0.0.2";
 
 // Installation event
 self.addEventListener("install", event => {
