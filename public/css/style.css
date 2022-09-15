@@ -3924,3 +3924,58 @@ ul.listStyle>li+li {
         max-height: 20px;
     }
 }
+
+figure.quote {
+    padding: 5em 0;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+figure.quote blockquote {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+figure.quote blockquote p {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+figure.quote blockquote p:before {
+    content: '"';
+    position: absolute;
+    top: -75px;
+    left: -50px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    font-size: 18em;
+    line-height: 1em;
+    opacity: 0;
+    animation: 1s normal forwards fadeIn;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.2;
+    }
+}
+
+
+figure.quote figcaption {
+    text-align: right;
+    width: 100%;
+}
+
+figure.quote figcaption cite {
+    font-size: 1.2em;
+}

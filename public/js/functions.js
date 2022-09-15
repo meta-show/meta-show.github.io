@@ -73,6 +73,23 @@ $(document).ready(function () {
         manifest();
     })();
 
+    // Animate quote
+    (() => {
+        var quoteObject = $(".quote p");
+        var quoteText = quoteObject.text();
+        var quoteLength = 0;
+        quoteObject.html("");
+
+        // Next letter animation
+        var nextLetter = () => {
+            quoteObject.html(quoteText.substring(0, ++quoteLength));
+            if (quoteLength < quoteText.length) {
+                window.setTimeout(nextLetter, 55);
+            }
+        };
+        setTimeout(nextLetter, 500);
+    })();
+
     $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
             $(".headerCol").addClass("fixedHeader");
